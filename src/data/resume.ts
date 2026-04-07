@@ -22,7 +22,7 @@ export const stats = [
   { label: "CLEARANCE", value: "OSCP" },
 ];
 
-export const executiveSummary = `200+ vulnerabilities. 177 targets. Every single one found by hand, not a scanner. I break into web apps, cloud infrastructure, mobile platforms, and AI systems for a living; then I write the report that tells engineers exactly how to fix what I found. From a 4-step invisible XSS chain that hijacked accounts without a single click, to an empty signature list that bypassed an entire blockchain's consensus mechanism, I find what automated tools simply can't. Currently operating as Security Engineer at Bureau Veritas on AWS assessments. OSCP certified. Georgia Tech MS Cybersecurity.`;
+export const executiveSummary = `4+ years hunting vulnerabilities across web apps, cloud infrastructure, mobile platforms, and AI systems. 200+ findings, 177 targets, every single one found by hand. From a 4-step invisible XSS chain that hijacked accounts without a single click, to an empty signature list that bypassed an entire blockchain's consensus mechanism; I find what automated tools simply can't. Currently operating as Security Engineer at Bureau Veritas on AWS assessments. OSCP certified.`;
 
 export const focusAreas = [
   "AppSec",
