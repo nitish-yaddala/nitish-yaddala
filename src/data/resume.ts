@@ -22,7 +22,7 @@ export const stats = [
   { label: "CLEARANCE", value: "OSCP" },
 ];
 
-export const executiveSummary = `4+ years of applied security experience — 3 years professional assessments (HighRadius, HP Inc., Bureau Veritas) plus 17 months MS Cybersecurity at Georgia Tech. Delivered 200+ validated findings across 177 targets spanning web applications, APIs, AWS cloud infrastructure, mobile platforms, AI/LLM systems, and blockchain protocols. Operated across the full assessment lifecycle: scoping, reconnaissance, exploitation, and engineering-ready remediation reporting. Specialized in uncovering complex multi-step chains that automated scanners miss.`;
+export const executiveSummary = `200+ vulnerabilities. 177 targets. Every single one found by hand, not a scanner. I break into web apps, cloud infrastructure, mobile platforms, and AI systems for a living; then I write the report that tells engineers exactly how to fix what I found. From a 4-step invisible XSS chain that hijacked accounts without a single click, to an empty signature list that bypassed an entire blockchain's consensus mechanism, I find what automated tools simply can't. Currently operating as Security Engineer at Bureau Veritas on AWS assessments. OSCP certified. Georgia Tech MS Cybersecurity.`;
 
 export const focusAreas = [
   "AppSec",

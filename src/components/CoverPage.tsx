@@ -360,7 +360,7 @@ export default function CoverPage() {
 
         {/* Clearance / classification line */}
         <div
-          className="mt-10 mb-20 transition-all duration-700"
+          className="mt-10 transition-all duration-700"
           style={{
             opacity: phase >= 6 ? 0.35 : 0,
             transitionDelay: '0.4s',
@@ -378,20 +378,20 @@ export default function CoverPage() {
             CLEARANCE: {profile.clearance} &middot; STATUS: ACTIVE &middot; CLASSIFICATION: TOP SECRET
           </div>
         </div>
-      </div>
 
-      {/* Scroll indicator — Phase 7 */}
-      <div
-        className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-3 transition-all duration-1000"
-        style={{ opacity: phase >= 7 ? 0.5 : 0 }}
-      >
-        <span
-          className="text-[9px] tracking-[0.3em] uppercase"
-          style={{ fontFamily: 'var(--font-mono)' }}
+        {/* Scroll indicator — Phase 7 */}
+        <div
+          className="mt-12 mb-8 flex flex-col items-center gap-3 transition-all duration-1000"
+          style={{ opacity: phase >= 7 ? 0.5 : 0 }}
         >
-          DECLASSIFY REPORT
-        </span>
-        <div className="w-px h-8 bg-current animate-pulse opacity-40" />
+          <span
+            className="text-[9px] tracking-[0.3em] uppercase"
+            style={{ fontFamily: 'var(--font-mono)' }}
+          >
+            DECLASSIFY REPORT
+          </span>
+          <div className="w-px h-8 bg-current animate-pulse opacity-40" />
+        </div>
       </div>
     </section>
   );
