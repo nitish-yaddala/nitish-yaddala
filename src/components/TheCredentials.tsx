@@ -200,7 +200,7 @@ export default function TheCredentials() {
                   <div className="h-px flex-1" style={{ background: 'var(--rt-c-divider)' }} />
                 </div>
 
-                {/* Georgia Tech — Primary */}
+                {/* Georgia Tech,Primary */}
                 <ScrollAnimator animation="fadeUp">
                   <div
                     className="relative rounded-sm overflow-hidden mb-6"
@@ -244,7 +244,7 @@ export default function TheCredentials() {
                           </div>
 
                           <div className="mt-3" style={{ fontFamily: 'var(--font-caveat)', color: '#8B7D3C', fontSize: '0.9rem', transform: 'rotate(-1deg)', opacity: 0.4 }}>
-                            &quot;Top performer in Applied Cryptography — directly applicable to field operations.&quot;
+                            &quot;Top performer in Applied Cryptography,directly applicable to field operations.&quot;
                           </div>
                         </div>
                       </div>
@@ -261,7 +261,7 @@ export default function TheCredentials() {
                               color: '#8B7D3C',
                             }}
                           >
-                            {expanded ? '▼' : '▶'} CS6260: APPLIED CRYPTOGRAPHY — TRANSCRIPT
+                            {expanded ? '▼' : '▶'} CS6260: APPLIED CRYPTOGRAPHY,TRANSCRIPT
                           </span>
                         </button>
 
@@ -330,7 +330,7 @@ export default function TheCredentials() {
                   </div>
                 </ScrollAnimator>
 
-                {/* SRM — Secondary */}
+                {/* SRM,Secondary */}
                 <ScrollAnimator animation="fadeUp" delay={0.1}>
                   <div
                     className="relative rounded-sm overflow-hidden"
@@ -379,7 +379,7 @@ export default function TheCredentials() {
                   <div className="h-px flex-1" style={{ background: 'var(--rt-c-divider)' }} />
                 </div>
 
-                {/* OSCP — Crown jewel, full-width */}
+                {/* OSCP,Crown jewel, full-width */}
                 <ScrollAnimator animation="fadeUp">
                   <div
                     className="relative rounded-sm overflow-hidden mb-4 cursor-pointer transition-all duration-200 hover:shadow-lg"
@@ -445,7 +445,7 @@ export default function TheCredentials() {
                   </div>
                 </ScrollAnimator>
 
-                {/* Other certs — compact grid */}
+                {/* Other certs,compact grid */}
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
                   {certifications.filter(c => c.name !== 'OSCP').map((cert, idx) => {
                     const meta = certMeta[cert.name] || { tier: 'foundation', color: '#666', description: '' };
@@ -503,7 +503,7 @@ export default function TheCredentials() {
               <div>
                 <div className="flex items-center gap-2 mb-6">
                   <span className="text-[9px] tracking-[0.25em] font-bold" style={{ fontFamily: 'var(--font-mono)', color: 'var(--rt-c-accent)' }}>
-                    C. COMPETITION RECORDS — MISSION DEBRIEFS
+                    C. COMPETITION RECORDS,MISSION DEBRIEFS
                   </span>
                   <div className="h-px flex-1" style={{ background: 'var(--rt-c-divider)' }} />
                 </div>

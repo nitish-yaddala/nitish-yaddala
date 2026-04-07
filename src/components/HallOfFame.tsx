@@ -316,7 +316,7 @@ function WantedPoster({
               color: '#6b5030',
             }}
           >
-            DEAD OR ALIVE — VULNERABILITY BOUNTY
+            DEAD OR ALIVE,VULNERABILITY BOUNTY
           </div>
         </div>
 
@@ -415,7 +415,7 @@ function WantedPoster({
           </span>
         </div>
 
-        {/* Significance — spotlight only */}
+        {/* Significance,spotlight only */}
         {isSpotlight && (
           <p
             className="text-[10px] leading-relaxed text-center mt-1"
@@ -435,7 +435,7 @@ function WantedPoster({
           </div>
         </div>
 
-        {/* NEUTRALIZED stamp — slams in on scroll */}
+        {/* NEUTRALIZED stamp,slams in on scroll */}
         {stampVisible && (
           <div
             className="absolute pointer-events-none select-none stamp-animate"
@@ -577,7 +577,7 @@ function DossierPanel({
             </div>
           </div>
 
-          {/* CVSS Score — large display */}
+          {/* CVSS Score,large display */}
           <div
             className="p-4 mb-6"
             style={{
@@ -635,7 +635,7 @@ function DossierPanel({
             <div className="h-px flex-1" style={{ background: 'var(--rt-c-divider)' }} />
           </div>
 
-          {/* Significance — typewriter */}
+          {/* Significance,typewriter */}
           <div className="mb-6">
             <div className="text-[9px] tracking-[0.2em] mb-2" style={{ fontFamily: 'var(--font-mono)', color: 'var(--rt-c-text-muted)' }}>
               SIGNIFICANCE
@@ -657,7 +657,7 @@ function DossierPanel({
             <GlitchRedaction width={60} />
           </div>
 
-          {/* Exploit Narrative — typewriter */}
+          {/* Exploit Narrative,typewriter */}
           <div className="mb-8">
             <div className="text-[9px] tracking-[0.2em] mb-2" style={{ fontFamily: 'var(--font-mono)', color: 'var(--rt-c-text-muted)' }}>
               EXPLOIT NARRATIVE
@@ -770,7 +770,7 @@ export default function HallOfFame() {
             className="text-center text-xs tracking-wider opacity-40 mb-10"
             style={{ fontFamily: 'var(--font-mono)' }}
           >
-            Top 10 highest-impact vulnerabilities — ranked by severity and real-world consequence
+            Top 10 highest-impact vulnerabilities,ranked by severity and real-world consequence
           </p>
         </ScrollAnimator>
 
@@ -815,7 +815,7 @@ export default function HallOfFame() {
                 MOST WANTED
               </div>
 
-              {/* Top 3 — spotlight row */}
+              {/* Top 3,spotlight row */}
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
                 {top3.map((finding, idx) => (
                   <ScrollAnimator key={finding.rank} delay={idx * 0.08}>
@@ -841,7 +841,7 @@ export default function HallOfFame() {
                 <div className="h-px flex-1" style={{ background: 'var(--rt-c-divider)' }} />
               </div>
 
-              {/* Remaining — compact grid */}
+              {/* Remaining,compact grid */}
               <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
                 {rest.map((finding, idx) => (
                   <ScrollAnimator key={finding.rank} delay={Math.min((idx + 3) * 0.05, 0.4)}>
@@ -871,7 +871,7 @@ export default function HallOfFame() {
         </ScrollAnimator>
       </div>
 
-      {/* Dossier slide-out — portaled to body */}
+      {/* Dossier slide-out,portaled to body */}
       {expandedCard !== null && typeof document !== 'undefined' && createPortal(
         <DossierPanel
           finding={hallOfFame[expandedCard]}

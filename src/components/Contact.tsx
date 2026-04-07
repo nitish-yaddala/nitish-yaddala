@@ -342,7 +342,7 @@ function SecurityBadge({ active }: { active: boolean }) {
             {/* Header */}
             <div className="text-center mb-5 relative" style={{ zIndex: 2 }}>
               <div className="text-[7px] tracking-[0.4em] mb-1" style={{ fontFamily: 'var(--font-mono)', color: 'var(--rt-c-accent)', opacity: 0.6 }}>
-                SECURITY CLEARANCE — AUTHORIZED PERSONNEL
+                SECURITY CLEARANCE,AUTHORIZED PERSONNEL
               </div>
               <div className="h-px mx-auto" style={{ background: 'linear-gradient(90deg, transparent, var(--rt-c-divider), transparent)', width: '80%' }} />
             </div>
@@ -484,7 +484,7 @@ function SecurityBadge({ active }: { active: boolean }) {
 }
 
 /* ═══════════════════════════════════════════════════════
-   MAIN COMPONENT — THE SEQUENCE
+   MAIN COMPONENT,THE SEQUENCE
    ═══════════════════════════════════════════════════════ */
 export default function Contact() {
   const [showStamp, setShowStamp] = useState(false);

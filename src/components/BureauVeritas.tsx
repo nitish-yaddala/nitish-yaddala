@@ -114,7 +114,7 @@ export default function BureauVeritas() {
             className="text-2xl md:text-3xl font-bold text-center mb-12"
             style={{ fontFamily: 'var(--font-courier)' }}
           >
-            BUREAU VERITAS — AMAZON AWS
+            BUREAU VERITAS, AMAZON AWS
           </h2>
         </ScrollAnimator>
 

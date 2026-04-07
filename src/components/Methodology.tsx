@@ -350,7 +350,7 @@ export default function Methodology() {
             STANDARD OPERATING PROCEDURE
           </h2>
           <p className="text-center text-[10px] tracking-[0.2em] mb-10 opacity-40" style={{ fontFamily: 'var(--font-mono)' }}>
-            PLATFORM-ADAPTED 7-PHASE METHODOLOGY — SELECT PLATFORM, THEN INSPECT PHASES
+            PLATFORM-ADAPTED 7-PHASE METHODOLOGY,SELECT PLATFORM, THEN INSPECT PHASES
           </p>
         </ScrollAnimator>
 
@@ -471,7 +471,7 @@ export default function Methodology() {
                     {activeData.linkedFinding && (
                       <div className="p-3 rounded-sm mt-4" style={{ background: 'rgba(204,0,0,0.04)', border: '1px solid rgba(204,0,0,0.15)' }}>
                         <div className="text-[8px] tracking-[0.15em] mb-1.5" style={{ fontFamily: 'var(--font-mono)', color: '#CC0000' }}>
-                          REAL FINDING — THIS PHASE IN ACTION
+                          REAL FINDING,THIS PHASE IN ACTION
                         </div>
                         <div className="text-[12px] font-bold mb-1" style={{ fontFamily: 'var(--font-courier)', color: 'var(--rt-c-text-primary)' }}>
                           {activeData.linkedFinding.title}

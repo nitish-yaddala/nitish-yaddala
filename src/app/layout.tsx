@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "BREACH REPORT // Nitish Yaddala — Security Engineer",
-  description: "Declassified case file: Security Engineer portfolio — Application Security, Cloud Security, AI/LLM Security",
+  title: "BREACH REPORT // Nitish Yaddala, Security Engineer",
+  description: "Declassified case file: Security Engineer portfolio; Application Security, Cloud Security, AI/LLM Security",
 };
 
 export default function RootLayout({

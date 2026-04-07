@@ -23,7 +23,7 @@ const independentPlatforms = evidencePlatforms.filter(p => p.name !== 'Professio
 
 /* Professional breakdown for Part A */
 const professionalBreakdown = [
-  { name: 'BUREAU VERITAS — AWS', count: '100+', pct: 70 },
+  { name: 'BUREAU VERITAS,AWS', count: '100+', pct: 70 },
   { name: 'HP INC.', count: '20+', pct: 15 },
   { name: 'HIGHRADIUS', count: '15+', pct: 10 },
   { name: 'ISRO', count: '5+', pct: 5 },
@@ -444,7 +444,7 @@ function RedactionBar({ width = 80, height = 12 }: { width?: number; height?: nu
 }
 
 /* ═══════════════════════════════════════════════════════
-   PART A: THE FIELD RECORD — Professional Impact
+   PART A: THE FIELD RECORD,Professional Impact
    ═══════════════════════════════════════════════════════ */
 function FieldRecord() {
   return (
@@ -696,7 +696,7 @@ export default function EvidenceBoard() {
                 className="text-[10px] tracking-[0.25em] font-bold"
                 style={{ fontFamily: "'Courier Prime', monospace", color: 'var(--rt-c-accent)' }}
               >
-                INDEPENDENT RESEARCH — FULLY DOCUMENTED
+                INDEPENDENT RESEARCH,FULLY DOCUMENTED
               </span>
               <div className="h-px w-16 md:w-24" style={{ background: 'var(--rt-tag-border)', opacity: 0.4 }} />
             </div>
@@ -925,7 +925,7 @@ export default function EvidenceBoard() {
         <ScrollAnimator delay={0.15}>
           <div className="mt-8 p-4 rounded-sm" style={{ border: '1px dashed var(--rt-tag-border)' }}>
             <div className="text-[9px] tracking-[0.2em] opacity-35 mb-3" style={{ fontFamily: 'var(--font-mono)' }}>
-              INDEPENDENT VULNERABILITY MAP — EACH DOT REPRESENTS ONE FINDING
+              INDEPENDENT VULNERABILITY MAP,EACH DOT REPRESENTS ONE FINDING
             </div>
             <div className="flex flex-wrap gap-1">
               {independentFindings.map((f, i) => (

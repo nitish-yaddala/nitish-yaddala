@@ -5,9 +5,9 @@ import { capabilities } from '@/data/resume';
 import ScrollAnimator from './ScrollAnimator';
 
 const groups: { label: string; indices: number[]; note: string }[] = [
-  { label: 'OFFENSIVE OPERATIONS', indices: [0, 1, 2, 15], note: '"Strongest domain — offensive instincts are sharp."' },
+  { label: 'OFFENSIVE OPERATIONS', indices: [0, 1, 2, 15], note: '"Strongest domain; offensive instincts are sharp."' },
   { label: 'CLOUD & INFRASTRUCTURE', indices: [3, 9, 10], note: '"Deep AWS knowledge. 40+ services assessed firsthand."' },
-  { label: 'INTELLIGENCE & ANALYSIS', indices: [5, 6, 7, 11, 12], note: '"Unusual — combines AI/LLM testing with code-level depth."' },
+  { label: 'INTELLIGENCE & ANALYSIS', indices: [5, 6, 7, 11, 12], note: '"Unusual; combines AI/LLM testing with code-level depth."' },
   { label: 'SPECIALIZED DOMAINS', indices: [8, 4, 14, 17, 18, 19], note: '"Rare breadth: mobile + browser + crypto + WordPress."' },
   { label: 'PROGRAM & REPORTING', indices: [13, 16], note: '"Reports are engineering-ready. Peer reviews are thorough."' },
 ];
