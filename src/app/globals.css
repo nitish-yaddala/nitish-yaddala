@@ -77,6 +77,11 @@
 
   /* Severity bar backgrounds */
   --rt-bar-bg: rgba(0,0,0,0.06);
+
+  --rt-manila-bg: #D4C4A0;
+  --rt-manila-tab: #C4B48E;
+  --rt-manila-border: #B8A87A;
+  --rt-manila-peek: #CABF9A;
 }
 
 .dark {
@@ -122,6 +127,11 @@
   --rt-badge-link-hover: #fff;
 
   --rt-bar-bg: rgba(255,255,255,0.04);
+
+  --rt-manila-bg: #2A2418;
+  --rt-manila-tab: #3D3428;
+  --rt-manila-border: #4A3D2E;
+  --rt-manila-peek: #33291C;
 }
 
 /* Base */

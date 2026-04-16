@@ -814,9 +814,9 @@ export default function EvidenceBoard() {
                           <div
                             className="manila-folder relative p-5"
                             style={{
-                              background: 'var(--rt-card-bg)',
+                              background: 'var(--rt-manila-bg)',
                               borderRadius: '2px',
-                              boxShadow: '2px 3px 12px rgba(0,0,0,0.4), inset 0 1px 0 rgba(255,255,255,0.04)',
+                              boxShadow: '2px 3px 12px rgba(0,0,0,0.4), inset 0 1px 0 rgba(255,255,255,0.06)',
                               marginTop: '12px',
                               borderLeft: `4px solid ${stripeColor}`,
                               overflow: 'visible',
@@ -829,13 +829,13 @@ export default function EvidenceBoard() {
                                   key={f.id}
                                   className="text-[7px] px-2 py-1 truncate"
                                   style={{
-                                    background: 'var(--rt-card-bg)',
+                                    background: 'var(--rt-manila-peek)',
                                     boxShadow: '1px 2px 6px rgba(0,0,0,0.3)',
                                     transform: `rotate(${fi % 2 === 0 ? -3 : 2}deg) translateY(${fi * 4}px)`,
                                     maxWidth: '120px',
                                     fontFamily: 'var(--font-mono)',
                                     color: 'var(--rt-c-text-secondary)',
-                                    border: '1px solid var(--rt-c-divider)',
+                                    border: '1px solid var(--rt-manila-border)',
                                   }}
                                 >
                                   <span style={{ color: severityColors[f.severity], fontWeight: 700 }}>
@@ -851,10 +851,10 @@ export default function EvidenceBoard() {
                               className="absolute -top-5 left-2 px-3 py-1 text-[10px] font-bold tracking-wider"
                               style={{
                                 fontFamily: 'var(--font-mono)',
-                                background: 'var(--rt-card-border)',
+                                background: 'var(--rt-manila-tab)',
                                 color: 'var(--rt-c-text-secondary)',
                                 borderRadius: '3px 3px 0 0',
-                                borderTop: '2px solid var(--rt-classified-border)',
+                                borderTop: '2px solid var(--rt-manila-border)',
                               }}
                             >
                               {platform.name.toUpperCase()}
@@ -886,7 +886,7 @@ export default function EvidenceBoard() {
                                     className="text-[10px] px-2 py-1 rounded-sm"
                                     style={{
                                       fontFamily: 'var(--font-courier)',
-                                      background: 'var(--rt-bar-bg)',
+                                      background: 'var(--rt-manila-tab)',
                                       color: 'var(--rt-c-text-primary)',
                                       boxShadow: '1px 1px 3px rgba(0,0,0,0.2)',
                                     }}
