@@ -114,7 +114,7 @@ export default function BureauVeritas() {
             className="text-2xl md:text-3xl font-bold text-center mb-12"
             style={{ fontFamily: 'var(--font-courier)' }}
           >
-            BUREAU VERITAS, AMAZON AWS
+            BUREAU VERITAS, MAJOR CLOUD PROVIDER
           </h2>
         </ScrollAnimator>
 
@@ -132,10 +132,10 @@ export default function BureauVeritas() {
               <div className="flex flex-wrap items-start justify-between gap-4">
                 <div>
                   <div className="text-[9px] tracking-[0.2em] opacity-35 mb-1" style={{ fontFamily: 'var(--font-mono)' }}>
-                    CASE FILE: BV-AWS-2024 // PRIORITY: HIGH
+                    CASE FILE: BV-CLOUD-2024 // PRIORITY: HIGH
                   </div>
                   <h3 className="text-lg md:text-xl font-bold" style={{ fontFamily: 'var(--font-courier)' }}>
-                    Amazon AWS Security Assessments
+                    Cloud Security Assessments
                   </h3>
                   <p className="text-xs opacity-50 mt-1" style={{ fontFamily: 'var(--font-mono)' }}>
                     {bureauVeritas.period} &middot; {bureauVeritas.role} &middot; {bureauVeritas.location}
@@ -372,7 +372,7 @@ export default function BureauVeritas() {
             {/* Case file footer */}
             <div className="px-6 md:px-8 py-3 flex items-center justify-between" style={{ borderTop: '1px dashed var(--rt-tag-border)', opacity: 0.4 }}>
               <span className="text-[8px] tracking-[0.2em]" style={{ fontFamily: 'var(--font-mono)' }}>
-                CASE BV-AWS-2024 // 7 ASSESSMENT DOMAINS // {bureauVeritas.period}
+                CASE BV-CLOUD-2024 // 7 ASSESSMENT DOMAINS // {bureauVeritas.period}
               </span>
               <span className="text-[8px] tracking-[0.2em]" style={{ fontFamily: 'var(--font-mono)' }}>
                 PAGE {tabKeys.indexOf(activeTab) + 1} OF {tabKeys.length}
