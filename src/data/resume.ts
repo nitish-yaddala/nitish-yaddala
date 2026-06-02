@@ -22,7 +22,7 @@ export const stats = [
   { label: "CLEARANCE", value: "OSCP" },
 ];
 
-export const executiveSummary = `4+ years hunting vulnerabilities across web apps, cloud infrastructure, mobile platforms, and AI systems. 200+ findings, 177 targets, every single one found by hand. From a 4-step invisible XSS chain that hijacked accounts without a single click, to an empty signature list that bypassed an entire blockchain's consensus mechanism; I find what automated tools simply can't. Currently operating as Security Engineer at Bureau Veritas on AWS assessments. OSCP certified.`;
+export const executiveSummary = `4+ years hunting vulnerabilities across web apps, cloud infrastructure, mobile platforms, and AI systems. 200+ findings, 177 targets, every single one found by hand. From a 4-step invisible XSS chain that hijacked accounts without a single click, to an empty signature list that bypassed an entire blockchain's consensus mechanism; I find what automated tools simply can't. Currently operating as Security Engineer at Bureau Veritas, doing cloud security assessments for a major cloud provider. OSCP certified.`;
 
 export const focusAreas = [
   "AppSec",
@@ -35,7 +35,7 @@ export const focusAreas = [
 
 export const bureauVeritas = {
   company: "Bureau Veritas",
-  subtitle: "Amazon AWS Security Assessments",
+  subtitle: "Cloud Security Assessments · Major Cloud Provider",
   period: "Mar 2024 – Present",
   role: "Security Engineer",
   location: "Seattle, WA",
@@ -53,13 +53,13 @@ export const bureauVeritas = {
       "Tested authentication for brute force gaps, MFA bypass, session fixation, and token entropy weaknesses",
     ],
     AWS_CLOUD: [
-      "Closed all 14 IAM Mandatory Test Cases against real service code,PassRole, resource policy, confused deputy, ABAC, S3 sniping, cross-account trust",
+      "Closed a full 14-case IAM authorization test suite against production service code,PassRole, resource policy, confused deputy, ABAC, S3 sniping, cross-account trust",
       "Detected S3 bucket sniping risks by simulating delete-and-recreate across account boundaries and analyzing predictable naming",
       "Automated attack surface mapping by building AWSPorter,Python framework reducing reconnaissance time on every engagement",
       "Validated cloud posture across entire AWS environments using ScoutSuite and Meteo",
       "Tested source IP enforcement in IAM conditions,confirmed X-Forwarded-For injection didn't bypass restrictions",
       "Validated HTTP request smuggling via Content-Length / Transfer-Encoding differential and protocol switching",
-      "Confirmed AWS Organizations integration,data aggregation stops for departing accounts, delegated admin cleanup",
+      "Validated multi-account org integration,data aggregation stops for departing accounts, delegated admin cleanup",
       "Tested database security across RDS, Aurora, and DynamoDB for auth enforcement gaps and injection vectors",
       "Applied GCP security concepts through independent research,IAM model differences, org policies, service account keys",
       "Performed architecture-level control validation,confirmed permission boundaries and enforcement points were implemented in both code and runtime",
@@ -469,8 +469,8 @@ export const evidencePlatforms = [
       { id: "pro-3", title: "Stored XSS → Headless Browser Admin Escalation", platform: "Professional", cvss: 9.0, severity: "Critical" as const, cwe: "CWE-79", description: "Stored XSS payload in user comment field executed when an internal headless browser agent loaded the page with admin-level session context. Zero interaction required,a single comment submission granted full privileged API access, resource creation/modification/deletion, and pivot to internal systems." },
       // 4. State Government Portal IDOR
       { id: "pro-4", title: "State Government Portal IDOR", platform: "Professional", cvss: 8.6, severity: "High" as const, cwe: "CWE-639", description: "Systemic authorization failure across an entire state government scholarship portal. Sequential integer IDs with zero authorization checks exposed passport documents, visa records, financial data, and contact information. Validated across document upload, application management, and status tracking workflows." },
-      // 5. 100+ vulnerabilities across 40+ AWS services (aggregate)
-      { id: "pro-5", title: "100+ Vulns Across 40+ AWS Services", platform: "Professional", cvss: 8.0, severity: "High" as const, cwe: "CWE-862", description: "Comprehensive security assessment findings across 40+ AWS services at Bureau Veritas,100+ vulnerabilities identified (20+ high-severity) spanning authorization failures, isolation gaps, data exposure, and trust boundary abuse across backend APIs, cloud control planes, and AI-integrated features." },
+      // 5. 100+ vulnerabilities across 40+ cloud services (aggregate)
+      { id: "pro-5", title: "100+ Vulns Across 40+ Cloud Services", platform: "Professional", cvss: 8.0, severity: "High" as const, cwe: "CWE-862", description: "Comprehensive security assessment findings across 40+ cloud services for a major cloud provider,100+ vulnerabilities identified (20+ high-severity) spanning authorization failures, isolation gaps, data exposure, and trust boundary abuse across backend APIs, cloud control planes, and AI-integrated features." },
       // 6. 20+ critical vulnerabilities across 6 apps (aggregate)
       { id: "pro-6", title: "20+ Critical Vulns Across 6 Apps,HP Inc.", platform: "Professional", cvss: 8.5, severity: "High" as const, cwe: "CWE-287", description: "20+ critical vulnerabilities identified across 6 production applications at HP Inc. including SQLi, XSS, CSRF, AuthN/AuthZ bypass, XXE, and race conditions. Manual code review found insecure patterns, missing validation, and access control gaps that SAST missed entirely." },
     ],
@@ -484,7 +484,7 @@ export const hallOfFame = [
     source: "Bureau Veritas",
     cvss: 9.3,
     severity: "Critical" as const,
-    significance: "Demonstrated a 4-step invisible chain that no automated scanner could detect,each link harmless alone, devastating together. Found through manual code review during an AWS engagement.",
+    significance: "Demonstrated a 4-step invisible chain that no automated scanner could detect,each link harmless alone, devastating together. Found through manual code review during a cloud security engagement.",
     narrative: "XSS delivered via window.postMessage to a permissive listener. The payload harvested a CSRF token from a Rails GET endpoint, then fired a secondary XSS through the same postMessage channel. The CSRF token was used to update the victim's account profile,achieving complete account takeover without any user interaction beyond visiting an attacker-controlled page. Root cause traced to source, reproduction steps documented.",
   },
   {
@@ -494,7 +494,7 @@ export const hallOfFame = [
     cvss: 8.2,
     severity: "High" as const,
     significance: "Proved that a single polluted prototype key could compromise application-wide state across every user session simultaneously. No automated tool flagged it.",
-    narrative: "Identified during a separate AWS engagement through manual code review. A deep merge operation on user-controlled JSON input allowed __proto__ pollution in a JavaScript dependency. The pollution cascaded through the prototype chain, affecting shared objects across the entire application,not scoped to a single user or session. Found by tracing how untrusted input propagated through dependency code and recognizing the pollution pattern manually.",
+    narrative: "Identified during a separate cloud security engagement through manual code review. A deep merge operation on user-controlled JSON input allowed __proto__ pollution in a JavaScript dependency. The pollution cascaded through the prototype chain, affecting shared objects across the entire application,not scoped to a single user or session. Found by tracing how untrusted input propagated through dependency code and recognizing the pollution pattern manually.",
   },
   {
     rank: 3,
@@ -758,13 +758,13 @@ export const platformMethodologies: PlatformMethodology[] = [
       {
         phase: '06', name: 'REPORTING', description: 'Deliver AWS-specific remediation guidance',
         details: [
-          'Map findings to AWS Mandatory Test Cases (MTC 1–14)',
+          'Map findings to a standardized 14-case IAM authorization test suite',
           'Score with CVSS and map to CWE/OWASP',
           'Provide IAM policy least-privilege remediation templates',
           'Include executive summary with AWS service risk heatmap',
         ],
         terminalCmds: [
-          'mapping to MTC: MTC-03 (IAM), MTC-07 (S3), MTC-12 (Network)',
+          'mapping to test suite: TC-03 (IAM), TC-07 (S3), TC-12 (Network)',
           'generating CVSS vectors for 12 findings...',
           'attaching IAM policy remediation templates',
           'report generated: 47 pages, executive summary included',
@@ -1568,7 +1568,7 @@ export const arsenal = {
   "Reverse Engineering": ["Ghidra", "pwntools", "Snort"],
   "Burp Extensions": ["HTTP Request Smuggler", "Param Miner", "Active Scan++", "Turbo Intruder", "Backslash Powered Scanner", "Server-Side Prototype Pollution Scanner", "Diff Scans / Distribute Damage"],
   "Languages": ["Python", "JavaScript / TypeScript", "Java", "PHP", "C", "C++", ".NET (C#)", "Rust", "Ruby", "Go", "Bash"],
-  "Standards & Frameworks": ["OWASP Top 10", "OWASP Top 10 for LLMs", "CWE", "CVSS", "MITRE ATT&CK", "MITRE ATLAS", "AWS Security Best Practices", "AWS Mandatory Test Cases (MTC 1–14)", "STRIDE"],
+  "Standards & Frameworks": ["OWASP Top 10", "OWASP Top 10 for LLMs", "CWE", "CVSS", "MITRE ATT&CK", "MITRE ATLAS", "AWS Security Best Practices", "IAM Authorization Test Suite (14 cases)", "STRIDE"],
   "Platforms": ["HackerOne", "Wordfence Bug Bounty", "Bugcrowd"],
 };
 
